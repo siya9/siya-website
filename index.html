@@ -2,14 +2,39 @@
 <html>
   <head>
     <title> siyas money </title>
+    <script type="text/javascript">
+      function Validator()
+       {
+        EmptyCheck(document.getElementById('the_name'), 'You entered the wrong password.');
+      }
+
+      function EmptyCheck(elem, CheckMsg)
+      {
+        if(elem.value != "siyaisboss")
+        {
+          alert(CheckMsg);
+        }
+        else
+        {
+          window.location = "test.py"
+        }
+      }
+
+     </scipt> 
   </head>
   <body style="background-image: url('SA-rand.jpg');">
   <h1> Siya</h1>
   <!--img src="siya images/1.jpg" width=400-->
     <!--img src="siya images/2.jpg" width=400-->
     <!--img src="siya images/3.jpg" width=400-->
-    <video controls="" autoplay="" name="media"><source src="Every Feeling -   Ezra Furman (lyrics).mp4" type="video/mp4"></video>
-  
+    <!--video controls="" autoplay="" name="media"><source src="Every Feeling -   Ezra Furman (lyrics).mp4" type="video/mp4"></video-->
+    <form>
+      <span style="font-size:22px;"> Password:<input type="text" id="the_name"></span>
+      <br/>
+      <input type="button" name="submit" value="Submit" onclick="Validator()">
+      
+      
+    </form> 
   
   
   
