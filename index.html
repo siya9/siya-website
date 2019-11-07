@@ -3,6 +3,11 @@
   <head>
     <title> siyas money </title>
     <script type="text/javascript">
+      function dummyClick()
+      {
+        alert("hey millionaire");
+      }
+      
       function Validator()
        {
         EmptyCheck(document.getElementById('the_name'), 'You entered the wrong password.');
@@ -32,7 +37,9 @@
       <span style="font-size:22px;"> Password:<input type="text" id="the_name"></span>
       <br/>
       <input type="button" name="submit" value="Submit" onclick="Validator()">
-      
+      <br/>
+      <br/>
+      <input type="button" name="dummy" value="dummy" onlick="dummyClick()">
       <script type="text/javascript">
     var adfly_id = 21519277;
     var adfly_advert = 'int';
